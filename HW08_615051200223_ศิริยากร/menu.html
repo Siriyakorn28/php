@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body{margin-left: 550px;}
+    button {width: 40%;}
+    body { 
+        background: url(Picture/พื้นหลัง.jpg)
+        no-repeat center center fixed;
+        background-size:cover ;
+        }
+</style>
+<body>
+    <form name="myform1" method="post" action="menu.php">
+    <br><br><br>
+    <b><font face="CordiaUPC" size="8">Menu</b>
+    <br>
+        <a href = "customer.php"><button type="button" class="btn btn-primary" name="customer">
+            <b><font face="CordiaUPC" size="5">ข้อมูลลูกค้า</font></b></button></a><br>
+        <a href = "animal.php"><button type="button" class="btn btn-warning" name="animal">
+            <b><font face="CordiaUPC" size="5">ข้อมูลสัตว์</font></b></button></a><br>
+        <a href = "drug.php"><button type="button" class="btn btn-info" name="drug">
+            <b><font face="CordiaUPC" size="5">ข้อมูลยา</font></b></button></a><br>
+        <a href = "treatment.php"><button type="button" class="btn btn-success" name="treatment">
+            <b><font face="CordiaUPC" size="5">ข้อมูลการรักษา</font></b></button></a><br>
+        <a href = "search.php"><button type="button" class="btn btn-danger" name="search">
+            <b><font face="CordiaUPC" size="5">ค้นหา</font></b></button></a>
+    </font>
+    <br>
+    <b><font face="CordiaUPC" size="5">ศิริยากร ศิริสมบัติ 615051200223</b></font>
+</form>
+</body>
+</html>

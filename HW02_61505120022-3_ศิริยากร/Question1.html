@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        input[type=submit] {
+          width: 40%;
+          background-color:LimeGreen;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        input[type=reset] {
+          width: 40%;
+          background-color:DimGray;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+          background-color:rgb(127, 230, 127);
+        }
+
+        input[type=reset]:hover {
+          background-color: rgb(199, 187, 187);
+        }
+        
+        body {    
+            background-image: url("pic05.jpeg");
+            no-repeat center fixed;
+            background-size:cover ;
+            }
+    </style>
+        </style>
+    <body>
+        <br><br><br><br><br>
+        <p><b><center><font face="cordiaUPC" size="10"> แบบสอบถาม </font></center></b></p>
+        <center><font face="cordiaUPC" size="5">
+        <table>
+        <br>
+        <form>
+            
+            <tr>
+                <th>คำนำหน้า : </th> <td><input type="radio" name="name title" value="Mr."> นาย
+                                        <input type="radio" name="name title" value="Miss"> นางสาว
+                                        <input type="radio" name="name title" value="Mrs."> นาง</td>
+            </tr>
+            <tr>
+                <th>ชื่อ : </th><td><input type="text" name="yourname" size="30"></td>
+            </tr>
+            <tr>
+                <th>อาชีพ : </td><td><select name="career" >  <option value="1"> เลือกอาชีพ</option>
+                                                            <option value="1"> ธุรกิจส่วนตัว</option>
+                                                            <option value="2"> นักเรียน/นักศึกษา</option>
+                                                            <option value="3"> ข้าราชการ</option>
+                                                            <option value="4"> รับจ้าง</option>
+                                                            <option value="6"> อื่นๆ</option></select></td>
+            </tr>
+            <tr>
+                <th>ช่วงอายุ : </th>
+                <td><select name="old">   <option value="1">เลือกอายุ</option>
+                                          <option value="2">15-20 ปี</option>
+                                          <option value="2">21-30 ปี</option>
+                                          <option value="3">31-40 ปี</option>
+                                          <option value="4">31-50 ปี</option>
+                                          <option value="6">50 ปีขึ้นไป</option></select></td>
+            </tr>
+            <tr>
+                <th>งานอดิเรกที่ทำในวันหยุด : </th>  <td><input name="hobby" type="checkbox" value="1"> ช้อปปิ้ง
+                                                <input name="hobby" type="checkbox" value="2">  ไปเที่ยวต่างจังหวัด<br> 
+                                                <input name="hobby" type="checkbox" value="2">  อ่านหนังสือ
+                                                <input name="hobby" type="checkbox" value="3">  ดูหนัง</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td></td>
+                <td>
+                <input type="submit" name="btnSubmit" value="แสดง" class="btn btn-primary">     
+                <input type="reset" name="btnReset" value="เคลียร์ค่า" class="btn btn-primary">
+                </td>
+            </tr>
+            
+        </form>
+        </table>
+        </center>                         
+    </body>
+</html>
